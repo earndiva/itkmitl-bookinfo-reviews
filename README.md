@@ -6,7 +6,7 @@
 # Build Docker Image for reviews service
 docker build -t reviews .
 
-# Run reviews service on port 8080
+# Run reviews service on port 808
 docker run -d --name reviews -p 8082:9080 reviews
 ```
 
