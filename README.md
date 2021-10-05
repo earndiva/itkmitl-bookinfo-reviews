@@ -10,4 +10,10 @@ docker build -t reviews .
 docker run -d --name reviews -p 8082:9080 --link ratings:ratings -e ENABLE_RATINGS=true -e "RATINGS_SERVICE=http://ratings:8080" reviews
 ```
 
+## How to run with Docker Compose
+
+```bash
+docker-compose up
+```
+
 * Test with path `/health` and `/reviews/1`
